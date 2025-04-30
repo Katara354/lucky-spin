@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucky Spin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wheel-wrapper">
+      <div class="pointer"></div>
+      <canvas id="wheel" width="500" height="500"></canvas>
+    </div>
+    <button id="spin">PUTAR</button>
+  </div>
+
+<div id="winModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%);
+  background:#fff; border:2px solid #f68b1f; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); z-index:999;">
+  <h2 style="color:#f68b1f;" id="prizeText"></h2>
+  <button onclick="document.getElementById('winModal').style.display='none'" 
+    style="margin-top:10px; background:#f68b1f; color:white; border:none; padding:10px 20px; border-radius:5px;">Tutup</button>
+</div>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
